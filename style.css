@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(45deg, rgba(25,3,97,1) 0%, rgba(187,0,255,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+main {
+    width: min(42.8rem, 90%);
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    color: #34355B;
+    text-align: center;
+    box-shadow: 0 1px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hide {
+    display: none;
+}
+
+.first-view {
+    padding: 4.8rem 6.4em 6.4rem;
+}
+
+.first-view p, .second-view button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.first-view p {
+    margin-top: 1.4rem;
+    font-weight: 400;
+}
+
+.first-view button {
+    margin-top: 2rem;
+    border: none;
+    background: none;
+}
+
+.first-view button img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+img {
+    width: 100%;
+}
+
+.second-view {
+    padding: 4.8rem 6.4rem;
+}
+
+.second-view p, .second-view img {
+    margin-top: 1.7rem;
+}
+
+.second-view p {
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 400;
+    color: #000;
+    background: #E4EDF1;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    animation: toAppear 1s ease;
+}
+
+.second-view button {
+    color: #fff;
+    background: #FF9500;
+    padding: 1.6rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+}
+
+.second-view p, h1, h2 {
+    font-size: 2.4rem;
+    line-height: normal;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes toAppear {
+    from {
+        transform: scale(0) translateY(100%);
+    }
+    to {
+        transform: scale(1.0) translateY(0);
+    }
+}
